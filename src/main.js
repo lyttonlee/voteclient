@@ -3,12 +3,12 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import MintUI from 'mint-ui'
-import 'mint-ui/lib/style.css'
+import MuseUI from 'muse-ui'
+import 'muse-ui//dist/muse-ui.css'
 import animate from 'animate.css'
 import fly from './utils/fly'
 
-Vue.use(MintUI)
+Vue.use(MuseUI)
 Vue.use(animate)
 Vue.prototype.$fly = fly
 

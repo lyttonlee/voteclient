@@ -1,23 +1,6 @@
 <template>
   <div class="page">
     <div class="banner">
-      <mt-swipe :auto="4000" :showIndicators="showIndicators">
-        <mt-swipe-item>
-          <div class="item">
-            <img class="img" src="../assets/img/1.jpg" alt="">
-          </div>
-        </mt-swipe-item>
-        <mt-swipe-item>
-          <div class="item">
-            <img  class="img" src="../assets/img/2.jpg" alt="">
-          </div>
-        </mt-swipe-item>
-        <mt-swipe-item>
-          <div class="item">
-            <img  class="img" src="../assets/img/3.jpg" alt="">
-          </div>
-        </mt-swipe-item>
-      </mt-swipe>
     </div>
     <div class="section">
       <h2>正在征集作品的活动</h2>
@@ -55,7 +38,6 @@ export default {
 .page {
   .banner {
     width: 100%;
-    height: 217px;
   }
   .section {
     // background: #fff;

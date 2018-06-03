@@ -49,7 +49,11 @@ export default {
         line-height: 60px;
       }
     }
-    .router-link-active {
+    .active {
+      color: @activeColor;
+      // font-weight: bold;
+    }
+    .exact-active {
       color: @activeColor;
       // font-weight: bold;
     }

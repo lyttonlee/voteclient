@@ -1,21 +1,26 @@
 <template>
   <div id="app">
+    <top-bar/>
     <footBar></footBar>
     <transition
       :duration="{ enter: 1500, leave: 0 }"
       leave-active-class="animated fadeOutUp"
       enter-active-class="animated fadeInUp">
-      <router-view></router-view>
+      <keep-alive>
+        <router-view></router-view>
+      </keep-alive>
     </transition>
   </div>
 </template>
 
 <script>
 import footBar from '@conp/footBar'
+import topBar from '@conp/topbar'
 export default {
   name: 'App',
   components: {
-    footBar
+    footBar,
+    topBar
   }
 }
 </script>
@@ -30,6 +35,6 @@ export default {
   font-size: 12px;
 }
 .page {
-  margin-bottom: 80px;
+  margin: 80px auto;
 }
 </style>
