@@ -4,6 +4,7 @@
 
 > git branch dev
 
+> i have fixed a bug
 ## Build Setup
 
 ``` bash
